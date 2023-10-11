@@ -1,0 +1,47 @@
+body{
+  margin:0px;
+  background-color: rgb(26, 33, 66);
+  color:white;
+}
+   
+.navig{
+    padding:20px;
+    height:auto;
+    margin-right: 60px;
+}
+img{
+    position: absolute;
+    top:3%;
+}
+.heading{
+    padding:10px;
+    width:80%;
+    position:absolute;
+    top:33%;
+    left:30px;
+    
+}
+.nav-link {
+   color:#c637a0;
+   
+   font-size: medium;
+}
+.toast-body{
+    color:black;
+    font-size: larger;
+}
+ 
+.heading span {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+.heading div{
+    font-size: 5em;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.heading div span{
+    font-size: 5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}

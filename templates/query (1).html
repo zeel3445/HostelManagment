@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/loginform.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" href="{{url_for('static', filename='images/BMS_College_of_Engineering.svg')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='query.css')}}">
+    <title>DataBase</title>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{{url_for('static', filename='images/BMS_College_of_Engineering.svg')}}" alt="" width="50" height="44"
+                    class="d-inline-block align-text-top">
+                
+            </a>
+            <span>BMS HOSTELS</span> 
+        </div>
+    </nav>
+      
+    <a class="btn btn-outline-primary float-end m-2 d-inline-block" href="admin_front" role="button">Dashboard</a>
+    <a class="btn btn-outline-danger float-end m-2 d-inline-block" href="admin_page" role="button">Log Out</a>
+
+    
+      
+     <div class="content">
+
+    
+ 
+ 
+     <form action="{{url_for('query1')}}" method="post" >
+    <div>
+        <h3>
+            Student
+        </h3> 
+        <ul>
+            <li > <input type="checkbox" name="student" value="name"><span>Name</span></li>   
+            <li> <input type="checkbox" name="student" value="usn"><span>Usn</span></li>   
+            <li> <input type="checkbox" name="student" value="gender"><span>Gender</span> </li>   
+            <li> <input type="checkbox" name="student" value="fathers_name"><span>Father's Name</span> </li>   
+            <li> <input type="checkbox" name="student" value="email"><span>Email</span> </li>   
+            <li> <input type="checkbox" name="student" value="DOB"><span>D.O.B.</span> </li>   
+            <li> <input type="checkbox" name="student" value="aadhaar_num"><span>Aadhar Number</span> </li>   
+            <li> <input type="checkbox" name="student" value="mothers_name"><span>Mother's Name</span> </li>   
+            <li> <input type="checkbox" name="student" value="nationality"><span>Nationality</span> </li>   
+            <li> <input type="checkbox" name="student" value="Address"><span>Address</span> </li>   
+            <li> <input type="checkbox" name="student" value="phone_num"><span>Phone Number</span> </li>   
+            <li> <input type="checkbox" name="student" value="guardian_no"><span>Guardian's Number</span> </li>   
+             
+     </ul>
+   </div>
+    <div>
+        <h3>
+            Mess
+        </h3> 
+        <ul>
+       <li > <input type="checkbox" name="Mess" value="Mess id"><span>Mess Id</span></li>   
+       <li> <input type="checkbox" name="Mess" value="Mess type"><span>Mess Type</span></li>   
+       <li> <input type="checkbox" name="Mess" value="Mess Location"><span>Location</span> </li>   
+        
+        
+</ul>
+   </div>
+    <div>
+        <h3>
+            Room
+        </h3> 
+        <ul>
+       <li > <input type="checkbox" name="Room" value="Room Id"><span>Room Id</span></li>   
+       <li> <input type="checkbox" name="Room" value="Occupancy"><span>Occupancy</span></li>   
+       <li> <input type="checkbox" name="Room" value="tenure_start_date"><span>Tenure Start Date</span> </li>   
+       <li> <input type="checkbox" name="Room" value="tenure_end_date"><span>Tenure End Date</span> </li>   
+     
+        
+</ul>
+   </div>
+    <div>
+        <h3>
+             Hostel
+        </h3> 
+        <ul>
+       <li > <input type="checkbox" name="hostel" value="Hostel_id"><span>Hostel ID</span></li>   
+       <li> <input type="checkbox" name="hostel" value="Hostel Name"><span>Hostel Name</span></li>   
+       <li> <input type="checkbox" name="hostel" value="Hostel type"><span>Hostel Type</span> </li>   
+       <li> <input type="checkbox" name="hostel" value="Location"><span>Location</span> </li>   
+       
+        
+</ul>
+   </div>
+    <div>
+        <h3>
+             Warden
+        </h3> 
+        <ul>
+       <li > <input type="checkbox" name="Warden" value="Warden_id"><span>Warden ID</span></li>   
+       <li> <input type="checkbox" name="Warden" value="Warden Name"><span>Warden Name</span></li>   
+       <li> <input type="checkbox" name="Warden" value="Gender"><span>Gender</span> </li>   
+       <li> <input type="checkbox" name="Warden" value="W_Aadhaar"><span>Aadhar</span> </li>   
+       <li> <input type="checkbox" name="Warden" value="Phone_number"><span>Phone Number</span> </li>   
+     
+</ul>
+
+<button type="submit" class="btn btn-outline-primary float-end m-2">Run Query</button>
+   </div>
+
+ 
+     </form>
+     
+
+
+</div>
+
+<div class="inbuilt">
+    <form>
+    <select class="form-select form-select-lg mb-1" aria-label=".form-select-lg example">
+        <option selected>Select Query</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      
+      <button type=" submit" class="btn btn-outline-primary float-end m-2">Run Query</button>
+    </form>
+
+</div>
+     
+  
+  <div class="query">
+     <form id="query_write" action="" method="GET">
+
+    
+    <textarea rows="5"cols="100" placeholder="Enter the Sql Query"> </textarea>
+    
+
+    <button type=" submit" class="btn btn-outline-primary float-end m-2">Run Query</button>
+   </form>
+   
+  </div>
+
+  <div class="result">
+      
+    <!-- yha pr table aaegay -->
+
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+</html>

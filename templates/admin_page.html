@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="{{url_for('static', filename='images/BMS_College_of_Engineering.svg')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='loginform.css') }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+    <title>BMS COLLEGE OF ENGINEERING</title>
+
+</head>
+
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="{{url_for('static', filename='images/BMS_College_of_Engineering.svg')}}" alt="" width="50" height="44"
+                    class="d-inline-block align-text-top">
+            </a>
+            <span>BMS HOSTELS</span> 
+        </div>
+    </nav>
+
+    <div id="FORM">
+          <h2>ADMIN LOGIN</h2>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="1BM20IS025">
+            <label for="floatingInput">ADMIN ID</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+            <br>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit" onclick="valid()">SUBMIT</button>
+                 
+              </div>
+          </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+        <script src="{{ url_for('static',filename='admin_validation.js') }}"></script>
+</body>
+
+</html>

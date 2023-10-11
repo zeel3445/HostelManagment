@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="{{url_for('static', filename='images/BMS_College_of_Engineering.svg')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='loginform.css')}}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static', filename='about.css')}}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<title>About</title>
+
+<body>
+
+      
+  <div class="back ">
+
+    <div class="navig">
+     
+      <ul class="nav justify-content-end"> 
+        <img src="{{url_for('static', filename='images/BMS_College_of_Engineering.svg')}}" height="15%" width="15%" id="img_head"> 
+        <li class="nav-item">
+          <a style="color:black;" class="nav-link" href="#ab">About</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:black" class="nav-link" href="#hostel_list">Hostel List</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:black" class="nav-link" href="#fee">Fee Structure</a>
+        </li>
+
+        <li class="nav-item">
+      </ul>
+      </nav>
+    </div>
+
+    <div class=" heading">BMS HOSTELS</div>
+  </div>
+
+
+
+  <div class="section1" id="ab">
+
+    <div class="section-heading">
+      ABOUT
+    </div>
+    <div class="about-content">
+      The B.M.S. Educational Trust (BMSET) is a prestigious institution which founded and manages the top class colleges
+      viz., B.M.S. College of Engineering (BMSCE) , BMS Institute of Technology & Management, BMS College of Law, BMS
+      College for women and others institutions.
+
+      B.M.S. Educational Trust Hostels are part of BMSET and BMSET Hostels in the campus of B.M.S. College of
+      Engineering (BMSCE) provide accommodation to the students wishing to reside in the hostels. BMSET Hostels gives a
+      distinct advantage of befriending with students from across the globe and expose them different religions,
+      languages and customs of countries. Additionally, living as a community in the hostel will lead to all-round
+      development of personality of a hostelite and will definitely go a long way in fostering world-class citizens.
+
+
+      Hostels are independent units in respects to its internal administration under the overall supervision of council
+      of wardens and the hostel management. The hostels are located in the southern side and adjacent to the college
+      campus and have a separate hostel office and mess within the hostel premises.
+
+      The mess has a centralized modern kitchen and a separate dining hall for boys and girls. General menus for each
+      month is are decided by the hostelite representatives selected by the hostels. Special menus are introduced and
+      served on all important festivals.
+    </div>
+  </div>
+
+  <div class="section2" id="hostel_list">
+    <div class="section2-heading">
+      HOSTEL LIST
+    </div>
+
+    <div class="hostel_content">
+
+      <div class="card" style="width: 19rem;">
+        <img src="{{url_for('static', filename='images/Add a heading-2.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"> Indian Main Hostel for male students was built in the year of 1977 with a plinth area of
+            39,000 sq. ft. comprising of a ground plus two floors with a small basement to accommodate 150 pre-final and
+            final year students in single rooms. The facilities available include water heaters with a capacity of 3000
+            liters per day, TV lounge, Volley Ball Court, Indoor games like Carom Board, Table Tennis and a Multi Gym.
+            Washing machine are provided to the students for their convenience</p>
+        </div>
+      </div>
+      <div class="card" style="width: 19rem;">
+        <img src="{{url_for('static', filename='images/Add a heading-3.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"> This block was constructed between 1980-1984 with a plinth area of 42,586 sq. feet to
+            accommodate Female students. The hostel has Ground plus 5 floors consisting of 125 fully furnished rooms.
+            All rooms are provided on twin sharing basis. The basement consists of warden’s office, Visitors lounge,
+            reading room, kitchen and a dining hall, solar water heaters of 6,000 liters capacity, two lifts to carry 8
+            passengers each are provided. 
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 19rem;">
+        <img src="{{url_for('static', filename='images/Add a heading.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"> This unit constructed in 2003 to accommodate 288 boys has a plinth area of 5,611.29sq
+            meters (60,377.48 sq. ft.) comprising of basement, ground and five upper floors. All rooms are on twin
+            sharing basis. Basement is meant for vehicle parking. Each floor consists of three wings and in each wing,
+            there are 8 rooms totalling to 24 rooms per floor. Each student is provided with a wardrobe, study table,
+            chair, cot and overhead book storing cabinet.  
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 19rem;">
+        <img src="{{url_for('static', filename='images/Add a heading-4.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"> This newly constructed hostel is also exclusively for girl students. This new hostel
+            building with a plinth area of 539 sq meters (5,799.64 sq. ft.) comprising of basement, ground and three
+            upper floors was completed in the year 2012 to accommodate 76 girls. All rooms are twin sharing with
+            attached toilet and bathrooms with internet facility. Basement is meant for vehicle parking. Each floor
+            consists of three wings (east, middle and west).   </p>
+        </div>
+      </div>
+      </div>
+      <div class="tabl">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Hostel Name</th>
+            <th scope="col">Number of Rooms</th>
+            <th scope="col">Accommodation meant for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+           
+            <td>New Boys Hostel - 1</td>
+            <td>150</td>
+            <td>Boys</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>New Boys Hostel - 2</td>
+            <td>150</td>
+            <td>Boys</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Girls Hostel - 1</td>
+            <td>75</td>
+            <td>Girls</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Girls Hostel - 2</td>
+            <td>175</td>
+            <td>Girls</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+       
+
+<div class="section1" id="fee">
+<div class="section-heading">Fee Structure</div>
+<div class="tabl">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Year</th>
+        <th scope="col">Hostel Fees</th>
+        <th scope="col">Mess Veg</th>
+        <th scope="col">Mess Non Veg</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+       
+        <td>75000</td>
+        <td>65000</td>
+        <td>70000</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>70000</td>
+        <td>65000</td>
+        <td>70000</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>68000</td>
+        <td>65000</td>
+        <td>70000</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>70000</td>
+        <td>65000</td>
+        <td>70000</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

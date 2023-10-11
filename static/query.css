@@ -1,0 +1,85 @@
+body{
+    margin:0;
+}
+
+.content{
+    display: inline-block;
+    width:20%;
+    height:100vh;
+    overflow: scroll;
+}
+.content{
+   
+    background-color: azure;
+    display: inline-block;
+    padding:2%;
+
+}
+.content li{
+    padding:2%;
+    list-style: none;
+}
+span{
+    margin-left: 2%;
+
+}
+.query{
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 1%;
+    margin-top: 5%;
+    margin-left: 2%;
+    position: absolute;
+   left: 20%;
+    
+     top:250px;
+    width:75%;
+}
+tbody, td, tfoot, th, thead, tr{
+    border-width: 1px;
+}
+textarea{
+   
+    width:100%;
+    border:2px solid rgb(24, 24, 37);
+    
+    font-size: larger;
+
+}
+.result{
+    background-color: aliceblue;
+   position: absolute;
+   left: 20%;
+   margin: 1%;
+   margin-top: 5%;
+   margin-left: 2%;
+     top:550px;
+    width:75%;
+   display: inline-block;
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   align-content: center;
+  
+   
+
+  
+   
+}
+.result div{
+    padding:20px;
+    
+ overflow:scroll;
+    
+    /* justify-content: center; */
+    /* align-items: center; */
+
+
+}
+.inbuilt{
+    width:50%;
+    position:absolute;
+    top:19%;
+    left:30%;
+}
